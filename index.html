@@ -43,16 +43,28 @@
             flex-direction: column;
         }
     }
+
+    .zoom {
+        transition: transform .3s;
+        margin: 0 auto;
+    }
+
+    .zoom:hover {
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
 </style>
 </head>
 
 <body>
-    <h1 id="title" style="font-size: 40px; text-align:center">HỌC THÊM Ở NHÀ</h1>
+    <h1 id="title" style="font-size: 40px; text-align:center;">HỌC THÊM Ở NHÀ</h1>
     <div class="flex-container">
-        <div class="flex-item-left"><a href=""><img src="src/Image/math6.png" alt="Toán 6" style="width:60%;"></a></div>
-        <div class="flex-item-center"><a href=""><img src="src/Image/physical6.png" alt="Vật Lý 6"
+        <div class="flex-item-left"><a href=""><img class="zoom" src="src/Image/math6.png" alt="Toán 6"
                     style="width:60%;"></a></div>
-        <div class="flex-item-right"><a href=""><img src="src/Image/english6.png" alt="Anh Văn 6"
+        <div class="flex-item-center"><a href=""><img class="zoom" src="src/Image/physical6.png" alt="Vật Lý 6"
+                    style="width:60%;"></a></div>
+        <div class="flex-item-right"><a href=""><img class="zoom" src="src/Image/english6.png" alt="Anh Văn 6"
                     style="width:60%;"></a></div>
     </div>
 
